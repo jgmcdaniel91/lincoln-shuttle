@@ -43,7 +43,7 @@ const LS = {
   DRIVERS_KEY:'ls-drivers',
   PENDING_KEY:'ls-pending-sync',
 
-  getUrl()       { return localStorage.getItem(this.SCRIPT_KEY) || ''; },
+  getUrl()       { return localStorage.getItem(this.SCRIPT_KEY) || 'https://script.google.com/macros/s/AKfycbyirUHBboMV2t6svhFvgqhT0QTdVnswOyrJqjgx2luZD6WbXPW-1SOVnoBrwI6cVMC8/exec'; },
   setUrl(url)    { localStorage.setItem(this.SCRIPT_KEY, url.trim()); },
   getCached()    { try { const s = localStorage.getItem(this.RIDES_KEY); return s ? JSON.parse(s) : null; } catch { return null; } },
   setCached(r)   { localStorage.setItem(this.RIDES_KEY, JSON.stringify(r)); },
