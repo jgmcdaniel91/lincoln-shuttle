@@ -487,8 +487,6 @@ function App() {
               style={{background:"rgba(255,255,255,.15)",color:"#fff",border:"1px solid rgba(255,255,255,.3)",borderRadius:8,padding:"8px 12px",fontWeight:600,fontSize:12,letterSpacing:.5,minHeight:36}}>
               DRIVERS
             </button>
-            <button onClick={()=>{ setSettingsUrl(LS.getUrl()); setShowSettings(true); }}
-              style={{color:"rgba(255,255,255,0.9)",fontSize:20,padding:8,borderRadius:8,lineHeight:1,minHeight:36,minWidth:36,display:"flex",alignItems:"center",justifyContent:"center"}} title="Settings">⚙</button>
             <button onClick={startVoice}
               style={{width:42,height:42,borderRadius:"50%",border:"none",
                 background:listening?"#E53E3E":"#fff",
